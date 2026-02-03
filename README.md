@@ -57,17 +57,6 @@ Central bank decisions often move markets within minutes, yet the drivers behind
 
 ---
 
-## Project Structure
-PolicyPulse/
-├── data/ # Raw and processed datasets
-├── notebooks/ # Exploratory analysis and modeling
-├── src/ # Core analysis and utility functions
-├── app.py # Streamlit application
-├── requirements.txt # Project dependencies
-└── README.md
-
----
-
 ## Live Demo
 🔗 **Streamlit App:** https://policypulse-um3uldc9sidhhaeqme8x47.streamlit.app/
 
