@@ -24,21 +24,21 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Deep Space Glass CSS
+# Light Theme Glass CSS
 st.markdown("""
 <style>
-    .stApp { background: radial-gradient(circle at center, #14171f 0%, #0a0c10 100%); }
+    .stApp { background: linear-gradient(135deg, #F5F5F5 0%, #FFFFFF 100%); }
     .css-1r6slb0, .css-12oz5g7, .stExpander, div[data-testid="stMetric"] {
-        background-color: rgba(20, 25, 35, 0.5);
+        background-color: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(200, 200, 200, 0.3);
         border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
     }
-    h1, h2, h3, h4 { font-family: 'Inter', sans-serif; color: #F0F0F0; font-weight: 300; }
+    h1, h2, h3, h4 { font-family: 'Inter', sans-serif; color: #1A1A1A; font-weight: 300; }
     section[data-testid="stSidebar"] {
-        background-color: rgba(10, 12, 16, 0.95);
-        border-right: 1px solid rgba(255, 255, 255, 0.05);
+        background-color: rgba(245, 245, 245, 0.95);
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
     }
 </style>
 """, unsafe_allow_html=True)
@@ -148,9 +148,9 @@ def apply_glass(fig):
     fig.update_layout(
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
-        font=dict(color="#E0E0E0", family="Inter"),
-        xaxis=dict(gridcolor='rgba(255,255,255,0.05)', showline=True, linecolor='rgba(255,255,255,0.1)'),
-        yaxis=dict(gridcolor='rgba(255,255,255,0.05)', showline=True, linecolor='rgba(255,255,255,0.1)'),
+        font=dict(color="#2C2C2C", family="Inter"),
+        xaxis=dict(gridcolor='rgba(0,0,0,0.08)', showline=True, linecolor='rgba(0,0,0,0.15)'),
+        yaxis=dict(gridcolor='rgba(0,0,0,0.08)', showline=True, linecolor='rgba(0,0,0,0.15)'),
         margin=dict(l=0, r=0, t=30, b=0)
     )
     return fig
